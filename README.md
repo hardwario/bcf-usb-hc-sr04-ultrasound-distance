@@ -1,13 +1,19 @@
 <a href="https://www.bigclown.com/"><img src="https://bigclown.sirv.com/logo.png" width="200" alt="BigClown Logo" align="right"></a>
 
-# Firmware Skeleton for BigClown Core Module
+# HC-SR04 ultrasound distance sensor
 
-[![Travis](https://img.shields.io/travis/bigclownlabs/bcf-skeleton/master.svg)](https://travis-ci.org/bigclownlabs/bcf-skeleton)
-[![Release](https://img.shields.io/github/release/bigclownlabs/bcf-skeleton.svg)](https://github.com/bigclownlabs/bcf-skeleton/releases)
-[![License](https://img.shields.io/github/license/bigclownlabs/bcf-skeleton.svg)](https://github.com/bigclownlabs/bcf-skeleton/blob/master/LICENSE)
-[![Twitter](https://img.shields.io/twitter/follow/BigClownLabs.svg?style=social&label=Follow)](https://twitter.com/BigClownLabs)
+## Power
+If you use original HC-SR04 you need to power sensor with 5V.
+On Core Module R2.3 and nwer you can use +5V contact on PCB near the BOOT pin.
+The TRIG signal and ECHO signals doesn't need any level converter. Sensor is OK with 3V input and MCU is ok with 5V input.
 
-This repository contains firmware skeleton for [Core Module](https://shop.bigclown.com/core-module).
+If you use 3V variant of this sensor, you can power it from the VCC 3.3V pin on the Core Module
+
+## Sensor connection
+- P8 - ECHO
+- P9 - TRIG
+
+This repository contains firmware for [Core Module](https://shop.bigclown.com/core-module).
 
 If you want to get more information about Core Module, firmware and how to work with it, please follow this link:
 
